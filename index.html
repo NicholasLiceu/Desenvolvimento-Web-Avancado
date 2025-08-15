@@ -6,21 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Meu primeiro código JavaScript</h1>
+    <h1>Olá, mundo!</h1>
+    <p>Esse é meu primeiro código JavaScript</p>
 
     <script>
-        let usuario1 = "Jorge";
-        let idade = 25;
+        let usuario = prompt("Qual é o seu nome?");
+        let idade = prompt("Qual é a sua idade?");
 
-        alert("Olá " + usuario1 + ", você tem " + idade + " anos.");
+        alert(`Olá, ${usuario}! Você tem ${idade} anos.`);
 
-        //Se uma condição for verdadeira, faça isso. Senão faça aquilo
-
-        if (idade >= 18) {
+        if (idade > 18) {
             alert("Você é maior de idade.");
         } else {
             alert("Você é menor de idade.");
         }
+
     </script>
 </body>
 </html>
