@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Introdução ao JavaScript</h1>
+    <h2>Dados Primitivos</h2>
+
+    <script>
+        let nome = "Nicholas"
+        document.writeln(`Meu nome é ${nome}`)
+        
+        let n1 = Number(prompt("Digite um numero"))
+        let n2 = Number(prompt("Digite outro numero" + nome))
+
+        document.writeln(typeof n1)
+        document.writeln(typeof n2)
+
+        let soma = n1 + n2
+        
+        document.writeln(`A soma dos números ${n1} e ${n2} é ${soma}<br>`)
+        document.writeln(`${nome} tem ${nome.length} caracteres`)
+        document.writeln(nome.toUpperCase())
+        document.writeln(nome.toLowerCase())
+    </script>
+</body>
+</html>
