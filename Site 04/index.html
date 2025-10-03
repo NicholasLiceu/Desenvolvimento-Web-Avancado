@@ -10,10 +10,23 @@
     <p>Ano que vem vou fazer mais curso de tecnologia</p>
 
     <script>
-        let numero = 8
-        let numero2 = 20
+        // Obter três valores do usuário, calcular a média desses 3 valores e escrever na página se ele foi aprovado ou não. "Sua média foi {media}, portanto você foi aprovado/reprovado"
 
-        numero > 10 ? document.writeln("Aprovado") : document.writeln("Reprovado")
+        let numero1 = Number(prompt("Digite a primeira nota"))
+        let numero2 = Number(prompt("Digite a segunda nota"))
+        let numero3 = Number(prompt("Digite a terceira nota"))
+
+        let soma = numero1+numero2+numero3
+        alert(soma)
+
+        let media = soma/3
+
+        if (media >= 6){
+            document.writeln(`Sua média foi ${media}, portanto você foi aprovado`)
+        }
+        else{
+            document.writeln(`Sua média foi ${media}, portanto você foi reprovado`)
+        }
 
     </script>
 </body>
